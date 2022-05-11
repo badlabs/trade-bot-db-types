@@ -1,0 +1,1 @@
+# trade-bot-db-types
