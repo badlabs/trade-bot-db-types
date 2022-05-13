@@ -1,5 +1,5 @@
 {
-  "name": "trade-bot-db-types",
+  "name": "@badlabs/trade-bot__db-types",
   "version": "0.1.0",
   "types": "./index.d.ts"
 }
