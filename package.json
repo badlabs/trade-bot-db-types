@@ -1,5 +1,10 @@
 {
   "name": "@badlabs/trade-bot__db-types",
   "version": "0.1.0",
-  "types": "./index.d.ts"
+  "types": "./index.d.ts",
+  "author": {
+      "name": "badlabs", 
+      "email": "dorich2000@gmail.com", 
+      "url": "https://badlabs.github.io/"
+    }
 }
