@@ -1,17 +1,17 @@
 /**
- * Model Currency
+ * Model D_Currency
  * 
  */
-export type Currency = {
+ export type D_Currency = {
   name: string
   ticker: string
 }
 
 /**
- * Model Security
+ * Model D_Security
  * 
  */
-export type Security = {
+export type D_Security = {
   name: string
   ticker: string
   price: number
@@ -19,28 +19,28 @@ export type Security = {
 }
 
 /**
- * Model FollowedSecurity
+ * Model D_FollowedSecurity
  * 
  */
-export type FollowedSecurity = {
+export type D_FollowedSecurity = {
   security_ticker: string
   followed_since: Date
 }
 
 /**
- * Model PortfolioPosition
+ * Model D_PortfolioPosition
  * 
  */
-export type PortfolioPosition = {
+export type D_PortfolioPosition = {
   security_ticker: string
   amount: number
 }
 
 /**
- * Model Operation
+ * Model D_Operation
  * 
  */
-export type Operation = {
+export type D_Operation = {
   exchange_id: string | null
   security_ticker: string
   status: string
@@ -50,5 +50,4 @@ export type Operation = {
   updated_at: Date
   created_at: Date
 }
-
 
