@@ -18,5 +18,6 @@ npm install @badlabs/trade-bot__db-types
 |---|---|
 |0.1.0|0.1.0|
 |0.1.0|0.2.0|
+|0.1.0|0.3.0|
 
 <!--versions-compatability-end-->

@@ -2,7 +2,7 @@
  * Model Currency
  * 
  */
-export type Currency = {
+export interface ICurrency = {
   name: string
   ticker: string
 }
@@ -11,7 +11,7 @@ export type Currency = {
  * Model Security
  * 
  */
-export type Security = {
+export interface ISecurity = {
   name: string
   ticker: string
   price: number
@@ -22,7 +22,7 @@ export type Security = {
  * Model FollowedSecurity
  * 
  */
-export type FollowedSecurity = {
+export interface IFollowedSecurity = {
   security_ticker: string
   followed_since: Date
 }
@@ -31,7 +31,7 @@ export type FollowedSecurity = {
  * Model PortfolioPosition
  * 
  */
-export type PortfolioPosition = {
+export interface IPortfolioPosition = {
   security_ticker: string
   amount: number
 }
@@ -40,7 +40,7 @@ export type PortfolioPosition = {
  * Model Operation
  * 
  */
-export type Operation = {
+export interface IOperation = {
   exchange_id: string | null
   security_ticker: string
   status: string
