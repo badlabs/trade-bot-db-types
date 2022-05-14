@@ -42,3 +42,18 @@ jobs:
     - run: npm publish $(ls *.tgz)
       env:
         NODE_AUTH_TOKEN: ${{secrets.GH_PACKAGES_TOKEN}}
+        
+  publish-npm:
+    name: Publish to NPM
+    needs: [package]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install
+      - run: npm test
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_PUBLISH_TOKEN }}
