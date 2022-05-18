@@ -47,6 +47,30 @@ export type Operation = {
   operation_type: string
   amount: number
   price: number
+  run_id: number | null
+  updated_at: Date
+  created_at: Date
+}
+
+/**
+ * Model Algorithm
+ * 
+ */
+export type Algorithm = {
+  name: string
+  description: string
+  input_types: string
+}
+
+/**
+ * Model AlgorithmRun
+ * 
+ */
+export type AlgorithmRun = {
+  id: number
+  algorithm_name: string
+  inputs: string
+  state: string
   updated_at: Date
   created_at: Date
 }
@@ -103,6 +127,30 @@ export interface IOperation = {
   operation_type: string
   amount: number
   price: number
+  run_id: number | null
+  updated_at: Date
+  created_at: Date
+}
+
+/**
+ * Model Algorithm
+ * 
+ */
+export interface IAlgorithm = {
+  name: string
+  description: string
+  input_types: string
+}
+
+/**
+ * Model AlgorithmRun
+ * 
+ */
+export interface IAlgorithmRun = {
+  id: number
+  algorithm_name: string
+  inputs: string
+  state: string
   updated_at: Date
   created_at: Date
 }
