@@ -8,10 +8,10 @@ export type Currency = {
 }
 
 /**
- * Model Security
+ * Model Instrument
  * 
  */
-export type Security = {
+export type Instrument = {
   name: string
   ticker: string
   price: number
@@ -19,11 +19,11 @@ export type Security = {
 }
 
 /**
- * Model FollowedSecurity
+ * Model FollowedInstrument
  * 
  */
-export type FollowedSecurity = {
-  security_ticker: string
+export type FollowedInstrument = {
+  instrument_ticker: string
   followed_since: Date
 }
 
@@ -32,7 +32,7 @@ export type FollowedSecurity = {
  * 
  */
 export type PortfolioPosition = {
-  security_ticker: string
+  instrument_ticker: string
   amount: number
 }
 
@@ -42,7 +42,7 @@ export type PortfolioPosition = {
  */
 export type Operation = {
   exchange_id: string | null
-  security_ticker: string
+  instrument_ticker: string
   status: string
   operation_type: string
   amount: number
@@ -88,10 +88,10 @@ export interface ICurrency = {
 }
 
 /**
- * Model Security
+ * Model Instrument
  * 
  */
-export interface ISecurity = {
+export interface IInstrument = {
   name: string
   ticker: string
   price: number
@@ -99,11 +99,11 @@ export interface ISecurity = {
 }
 
 /**
- * Model FollowedSecurity
+ * Model FollowedInstrument
  * 
  */
-export interface IFollowedSecurity = {
-  security_ticker: string
+export interface IFollowedInstrument = {
+  instrument_ticker: string
   followed_since: Date
 }
 
@@ -112,7 +112,7 @@ export interface IFollowedSecurity = {
  * 
  */
 export interface IPortfolioPosition = {
-  security_ticker: string
+  instrument_ticker: string
   amount: number
 }
 
@@ -122,7 +122,7 @@ export interface IPortfolioPosition = {
  */
 export interface IOperation = {
   exchange_id: string | null
-  security_ticker: string
+  instrument_ticker: string
   status: string
   operation_type: string
   amount: number
