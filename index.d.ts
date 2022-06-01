@@ -37,17 +37,32 @@ export type PortfolioPosition = {
 }
 
 /**
+ * Model Order
+ * 
+ */
+export type Order = {
+  exchange_id: string | null
+  instrument_ticker: string
+  status_first: string
+  operation_type: string
+  amount: number
+  price: number
+  run_id: number | null
+  created_at: Date
+}
+
+/**
  * Model Operation
  * 
  */
 export type Operation = {
   exchange_id: string | null
-  instrument_ticker: string
+  instrument_ticker: string | null
   status: string
   operation_type: string
-  amount: number
+  amount: number | null
+  amount_requested: number | null
   price: number
-  run_id: number | null
   updated_at: Date
   created_at: Date
 }
@@ -117,17 +132,32 @@ export interface IPortfolioPosition = {
 }
 
 /**
+ * Model Order
+ * 
+ */
+export interface IOrder = {
+  exchange_id: string | null
+  instrument_ticker: string
+  status_first: string
+  operation_type: string
+  amount: number
+  price: number
+  run_id: number | null
+  created_at: Date
+}
+
+/**
  * Model Operation
  * 
  */
 export interface IOperation = {
   exchange_id: string | null
-  instrument_ticker: string
+  instrument_ticker: string | null
   status: string
   operation_type: string
-  amount: number
+  amount: number | null
+  amount_requested: number | null
   price: number
-  run_id: number | null
   updated_at: Date
   created_at: Date
 }
