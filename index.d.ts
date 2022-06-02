@@ -85,6 +85,7 @@ export type AlgorithmRun = {
   id: number
   algorithm_name: string
   inputs: string
+  status: string
   state: string
   updated_at: Date
   created_at: Date
@@ -180,6 +181,7 @@ export interface IAlgorithmRun = {
   id: number
   algorithm_name: string
   inputs: string
+  status: string
   state: string
   updated_at: Date
   created_at: Date
