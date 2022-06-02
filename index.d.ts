@@ -98,7 +98,7 @@ export type AlgorithmRun = {
  * Model Currency
  * 
  */
-export interface ICurrency = {
+export interface ICurrency  {
   name: string
   ticker: string
 }
@@ -107,7 +107,7 @@ export interface ICurrency = {
  * Model Security
  * 
  */
-export interface ISecurity = {
+export interface ISecurity  {
   name: string
   ticker: string
   price: number
@@ -118,7 +118,7 @@ export interface ISecurity = {
  * Model FollowedSecurity
  * 
  */
-export interface IFollowedSecurity = {
+export interface IFollowedSecurity  {
   security_ticker: string
   followed_since: Date
 }
@@ -127,7 +127,7 @@ export interface IFollowedSecurity = {
  * Model PortfolioPosition
  * 
  */
-export interface IPortfolioPosition = {
+export interface IPortfolioPosition  {
   security_ticker: string
   amount: number
 }
@@ -136,7 +136,7 @@ export interface IPortfolioPosition = {
  * Model Order
  * 
  */
-export interface IOrder = {
+export interface IOrder  {
   exchange_id: string | null
   security_ticker: string
   status_first: string
@@ -151,7 +151,7 @@ export interface IOrder = {
  * Model Operation
  * 
  */
-export interface IOperation = {
+export interface IOperation  {
   exchange_id: string | null
   security_ticker: string | null
   status: string
@@ -167,7 +167,7 @@ export interface IOperation = {
  * Model Algorithm
  * 
  */
-export interface IAlgorithm = {
+export interface IAlgorithm  {
   name: string
   description: string
   input_types: string
@@ -177,7 +177,7 @@ export interface IAlgorithm = {
  * Model AlgorithmRun
  * 
  */
-export interface IAlgorithmRun = {
+export interface IAlgorithmRun  {
   id: number
   algorithm_name: string
   inputs: string
