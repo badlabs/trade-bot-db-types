@@ -8,10 +8,10 @@ export type Currency = {
 }
 
 /**
- * Model Instrument
+ * Model Security
  * 
  */
-export type Instrument = {
+export type Security = {
   name: string
   ticker: string
   price: number
@@ -19,11 +19,11 @@ export type Instrument = {
 }
 
 /**
- * Model FollowedInstrument
+ * Model FollowedSecurity
  * 
  */
-export type FollowedInstrument = {
-  instrument_ticker: string
+export type FollowedSecurity = {
+  security_ticker: string
   followed_since: Date
 }
 
@@ -32,7 +32,7 @@ export type FollowedInstrument = {
  * 
  */
 export type PortfolioPosition = {
-  instrument_ticker: string
+  security_ticker: string
   amount: number
 }
 
@@ -42,7 +42,7 @@ export type PortfolioPosition = {
  */
 export type Order = {
   exchange_id: string | null
-  instrument_ticker: string
+  security_ticker: string
   status_first: string
   operation_type: string
   amount: number
@@ -57,7 +57,7 @@ export type Order = {
  */
 export type Operation = {
   exchange_id: string | null
-  instrument_ticker: string | null
+  security_ticker: string | null
   status: string
   operation_type: string
   amount: number | null
@@ -103,10 +103,10 @@ export interface ICurrency = {
 }
 
 /**
- * Model Instrument
+ * Model Security
  * 
  */
-export interface IInstrument = {
+export interface ISecurity = {
   name: string
   ticker: string
   price: number
@@ -114,11 +114,11 @@ export interface IInstrument = {
 }
 
 /**
- * Model FollowedInstrument
+ * Model FollowedSecurity
  * 
  */
-export interface IFollowedInstrument = {
-  instrument_ticker: string
+export interface IFollowedSecurity = {
+  security_ticker: string
   followed_since: Date
 }
 
@@ -127,7 +127,7 @@ export interface IFollowedInstrument = {
  * 
  */
 export interface IPortfolioPosition = {
-  instrument_ticker: string
+  security_ticker: string
   amount: number
 }
 
@@ -137,7 +137,7 @@ export interface IPortfolioPosition = {
  */
 export interface IOrder = {
   exchange_id: string | null
-  instrument_ticker: string
+  security_ticker: string
   status_first: string
   operation_type: string
   amount: number
@@ -152,7 +152,7 @@ export interface IOrder = {
  */
 export interface IOperation = {
   exchange_id: string | null
-  instrument_ticker: string | null
+  security_ticker: string | null
   status: string
   operation_type: string
   amount: number | null
