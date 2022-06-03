@@ -8,6 +8,15 @@ export type Currency = {
 }
 
 /**
+ * Model CurrencyBalance
+ * 
+ */
+export type CurrencyBalance = {
+  currency_ticker: string
+  balance: number
+}
+
+/**
  * Model Security
  * 
  */
@@ -101,6 +110,15 @@ export type AlgorithmRun = {
 export interface ICurrency  {
   name: string
   ticker: string
+}
+
+/**
+ * Model CurrencyBalance
+ * 
+ */
+export interface ICurrencyBalance  {
+  currency_ticker: string
+  balance: number
 }
 
 /**
